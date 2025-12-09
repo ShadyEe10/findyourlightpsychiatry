@@ -1,0 +1,16 @@
+# robots.txt for Find Your Light Psychiatry PLLC
+# https://www.findyourlightpsychiatry.org
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.findyourlightpsychiatry.org/sitemap.xml
+
+# Disallow crawling of API routes and admin areas
+Disallow: /api/
+
+# Crawl-delay for polite bots (optional)
+# Crawl-delay: 1
+
