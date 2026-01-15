@@ -31,9 +31,9 @@ export default function ServicesPage() {
         </div>
 
         {/* Background Image Section with Services Overlay */}
-        <div className="relative w-full">
-          {/* Background Image Container - Positioned lower */}
-          <div className="relative w-full min-h-[1400px] md:min-h-[1600px] lg:min-h-[1800px]" aria-hidden="true">
+        <div className="relative w-full min-h-[1400px] md:min-h-[1600px] lg:min-h-[1800px]">
+          {/* Background Image Container */}
+          <div className="absolute inset-0" aria-hidden="true">
             <Image
               src="/images/service-background.jpeg"
               alt=""
@@ -50,15 +50,16 @@ export default function ServicesPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-white/10"></div>
             <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white via-white/45 to-transparent"></div>
             <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-white via-white/60 to-transparent"></div>
+          </div>
 
-            {/* Services Content Overlay */}
-            <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-20">
-              
-              {/* SPRAVATO Treatment */}
-              <Link
-                href="/spravato"
-                className="block mb-4 sm:mb-5 md:mb-6 bg-white/88 backdrop-blur-md rounded-3xl p-5 sm:p-6 md:p-7 lg:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.12)] border border-white/80 hover:bg-white/95 hover:shadow-[0_12px_48px_rgba(0,0,0,0.18)] transition-all duration-500 ease-out cursor-pointer group transform hover:-translate-y-0.5"
-              >
+          {/* Services Content Overlay */}
+          <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-20">
+            
+            {/* SPRAVATO Treatment */}
+            <Link
+              href="/spravato"
+              className="block mb-4 sm:mb-5 md:mb-6 bg-white/88 backdrop-blur-md rounded-3xl p-5 sm:p-6 md:p-7 lg:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.12)] border border-white/80 hover:bg-white/95 hover:shadow-[0_12px_48px_rgba(0,0,0,0.18)] transition-all duration-500 ease-out cursor-pointer group transform hover:-translate-y-0.5"
+            >
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-gray-900 font-semibold mb-3 sm:mb-4 group-hover:text-[#059669] transition-colors duration-300">
                   SPRAVATO® (esketamine) Treatment
                 </h2>
@@ -212,7 +213,6 @@ export default function ServicesPage() {
                 </p>
               </Link>
 
-            </div>
           </div>
         </div>
 

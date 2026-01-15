@@ -9,4 +9,5 @@ export { default as SpravatoLocations } from "./SpravatoLocations";
 export { default as SpravatoEligibility } from "./SpravatoEligibility";
 export { default as SpravatoCTA } from "./SpravatoCTA";
 export { default as SpravatoFAQ } from "./SpravatoFAQ";
+export { default as SpravatoResources } from "./SpravatoResources";
 

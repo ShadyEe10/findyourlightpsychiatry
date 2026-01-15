@@ -6,6 +6,7 @@ import SpravatoSchedule from "./SpravatoSchedule";
 import SpravatoInsurance from "./SpravatoInsurance";
 import SpravatoLocations from "./SpravatoLocations";
 import SpravatoEligibility from "./SpravatoEligibility";
+import SpravatoResources from "./SpravatoResources";
 import SpravatoCTA from "./SpravatoCTA";
 import SpravatoFAQ from "./SpravatoFAQ";
 
@@ -24,6 +25,7 @@ export default function SpravatoPage() {
       <SpravatoLocations />
       <SpravatoEligibility />
       <SpravatoFAQ />
+      <SpravatoResources />
       <SpravatoCTA />
     </main>
   );
